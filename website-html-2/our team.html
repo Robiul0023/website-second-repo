@@ -1,0 +1,667 @@
+  <!DOCTYPE HTML>
+  <html lang="en-US">
+  <head>
+     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Our Team</title>
+	 <!--------Accordion Slider link------------>
+	 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" type="text/css" href="dist/css/accordion-slider.min.css" media="screen"/>
+	 <link rel="stylesheet" type="text/css" href="css/our_team.css" media="screen"/>
+	 <!-------Google-Font  Open+Sans----------------->
+	 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	 <script type="text/javascript" src="dist/js/jquery.accordionSlider.min.js"></script>
+	 <!----- Google Font Roboto -->
+     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	 <!------Font Awesome----------->
+	 <script src="https://kit.fontawesome.com/4d2891330b.js" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" href="style.css" type="text/css"/>
+	 <!------Responsive Style------->
+	<link rel="stylesheet" href="responsive-style.css" />
+	
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+			// instantiate the accordion
+			$('#our_team').accordionSlider({
+				width: 1300,
+				height: 500,
+				responsiveMode: 'auto',
+				visiblePanels: 10,
+				closePanelsOnMouseOut: false,
+				autoplay: true
+			});
+
+			// change the responsive mode
+			$('.controls a').click(function(event) {
+				event.preventDefault();
+
+				if ($(this).hasClass('auto')) {
+					// change the responsive mode to 'auto' and remove the 'custom-responsive' class
+					$('#our_team').removeClass('custom-responsive');
+					$('#our_team').accordionSlider('responsiveMode', 'auto');
+
+					// change the arrows' visibility
+					$('.auto-arrow').show();
+					$('.custom-arrow').hide();
+				} else if ($(this).hasClass('custom')) {
+					// change the responsive mode to 'custom' and add the 'custom-responsive' 
+					// class in order to use it as a reference in the CSS code
+					$('#example1').addClass('custom-responsive');
+					$('#example1').accordionSlider('responsiveMode', 'custom');
+
+					// change the arrows' visibility
+					$('.custom-arrow').show();
+					$('.auto-arrow').hide();
+				}
+			});
+		});
+	</script>
+	<!-------
+	<style>
+	body { background: #fafafa; }
+	.lead { font-size: 1.5rem; font-weight: 300; }
+	.container { margin: 150px auto 50px auto; max-width: 960px; }
+	</style>
+	------------>
+   </head>
+   <body>
+ 
+	  <div class="main_wrap header_bg">
+		<div class="wrap">
+			<header>
+				<div id="header">
+					<h2>Dreaming Software Limited</h2>
+					<p><a href="#"> Search  <i class="fa-solid fa-magnifying-glass"></i></a></p>
+					</div>
+				   </div>
+				  </header>
+				 </div>
+				</div>
+				<div class="main_wrap nav_bg">
+				  <div class="wrap">
+					<nav>
+						<div id="nav">
+						 <ul id="mainmenu">
+							 <li><a href="#"><i class="fa-solid fa-house-user"></i></a></li>
+							 <li><a href="index.html" id="active" >Home</a></li>
+							 <li><a href="about.html">About Us</a></li>
+							 <li><a href="our service.html">Our service</a></li>
+							 <li><a href="our team.html">Our Team</a></li>
+							 <li><a href="our mission.html">Our Mission</a></li>
+							 <li><a href="our achievement.html">Our Achievement</a></li>
+							 <li><a href="contact.html">Contact Us</a></li>
+						 </ul>
+						</div>
+					   </nav>
+					  </div>
+				     </div>
+				    <div class="main_wrap our_team_slider_bg">
+						<div class="wrap">
+						<!-- Accordion Slider -->
+				     <div id="our_team" class="accordion-slider">
+					<div class="as-panels">
+
+				<div class="as-panels">
+				<!-- Panel 1 -->
+			<div class="as-panel">
+			<a href="http://bqworks.com">
+		<img class="as-background" src="img/slide-1.jpg">
+		</a>
+	  <div class="as-layer as-closed as-white as-vertical panel-counter" 
+		data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+		Panel 1
+	</div>
+	<h3 class="as-layer as-opened as-black as-padding" 
+		data-horizontal="40" data-vertical="10%" 
+		data-show-transition="left" data-hide-transition="left">
+		Our team member
+	</h3>
+		<p class="as-layer as-opened as-white as-padding hide-medium-screen" 
+		  data-horizontal="40" data-vertical="22%" 
+		  data-show-transition="left" data-show-delay="200" data-hide-transition="left" data-hide-delay="200">
+		  They are our excutive team member
+		</p>
+		<p class="as-layer as-opened as-black as-padding hide-small-screen" 
+		   data-horizontal="40" data-vertical="34%" data-width="350" 
+		   data-show-transition="left" data-show-delay="400" data-hide-transition="left" data-hide-delay="500">
+		  Excutive team always taking decision for organization.
+		 </p>
+		</div>
+		
+		<!-- Panel 2 -->
+	      <div class="as-panel">
+			<a href="http://bqworks.com">
+			 <img class="as-background" src="img/slide-9.jpg">
+		  </a>
+			 <div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 2
+			 </div>
+			<div class="as-layer" 
+			  data-position="bottomLeft" data-horizontal="20" data-vertical="20" data-width="100%">
+			<p class="as-layer as-opened as-white as-padding"
+			data-position="bottomLeft"
+			data-show-transition="left" data-hide-transition="up" data-show-delay="400" data-hide-delay="200">
+					They are our It expert team
+			</p>
+			<p class="as-layer as-opened as-black as-padding hide-small-screen"
+			  data-position="bottomLeft" data-horizontal="120"
+			  data-show-transition="left" data-hide-transition="up" data-show-delay="600" data-hide-delay="100">
+						 They are part of our it management.
+			</p>
+			<p class="as-layer as-opened as-white as-padding hide-small-screen"
+				data-position="bottomLeft" data-horizontal="245"
+				data-show-transition="left" data-hide-transition="up" data-show-delay="800">
+						They always monitoring our organization IT department.
+			  </p>
+			 </div>
+			</div>
+			
+			<!-- Panel 3 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-11.jpg"/>
+				</a>
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 3
+				</div>
+				<p class="as-layer as-opened as-white as-padding" 
+					data-horizontal="center" data-vertical="44%" 
+					data-show-transition="right" data-hide-transition="left" data-show-delay="500" >
+					Our marketing team
+				</p>
+				<p class="as-layer as-opened as-black as-padding hide-small-screen" 
+					data-horizontal="center" data-vertical="58%" 
+					data-show-transition="left" data-show-delay="700" data-hide-transition="right" data-hide-delay="200">
+					They promote our product to specific client.
+				</p>
+			   </div>
+			 <!-- Panel 4 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-12.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 4
+				</div>
+
+				<p class="as-layer as-opened as-black as-padding" 
+					data-position="bottomLeft"
+					data-show-transition="up" data-hide-transition="down">
+					Our finance team <span class="hide-small-screen">always work for finance department.</span> <span class="hide-medium-screen"></span>
+				</p>
+			   </div>
+
+	        <!-- Panel 5 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-13.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 5
+				</div>
+
+				<p class="as-layer as-opened as-white as-padding" 
+					data-vertical="10" data-horizontal="2%" data-width="96%" 
+					data-show-transition="down" data-show-delay="400" data-hide-transition="up">
+					Our health team <span class="hide-small-screen">, the look after our official health condition.</span> <span class="hide-medium-screen"> They keep more contribution in our organization.</span>
+				</p>
+			   </div>
+			
+			<!-- Panel 6 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-14.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 6
+				</div>
+
+				<p class="as-layer as-opened as-white as-padding" 
+					data-horizontal="10" data-vertical="10" data-width="35%">
+					Our adminstration team <span class="hide-small-screen">.The team maintain overall official activities.</span> <span class="hide-medium-screen">The team is most influential team of our organization adminstration department.</span>
+				</p>
+               </div>
+
+	        <!-- Panel 7 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-15.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 7
+				</div>
+
+				<p class="as-layer as-opened as-black as-padding" 
+					data-position="bottomLeft" data-vertical="10" data-horizontal="2%" data-width="96%" 
+					data-show-transition="up" data-show-delay="400" data-hide-transition="down">
+					our quality specialist team <span class="hide-small-screen">, they always assuarance of our product quality.</span> <span class="hide-medium-screen"> They also help to increase our product brand.</span>
+				</p>
+			   </div>
+
+	        <!-- Panel 8 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-16.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 8
+				</div>
+				
+				<h3 class="as-layer as-opened as-white as-padding" 
+					data-position="topRight" data-horizontal="7%" data-vertical="40%" 
+					data-show-transition="up" data-show-delay="500">
+					Our sports and recreation team
+				</h3>
+				<p class="as-layer as-opened as-black as-padding hide-medium-screen" 
+					data-position="topRight" data-horizontal="7%" data-vertical="52%" 
+					data-show-transition="up" data-show-delay="700">
+					The team are part of recreational department.
+				</p>
+				<p class="as-layer as-opened as-white as-padding hide-small-screen" 
+					data-position="topRight" data-horizontal="7%" data-vertical="64%" data-width="350" 
+					data-show-transition="up" data-show-delay="900">The team arranged different types of event with other organization
+					.
+				</p>
+			   </div>
+
+              <!-- Panel 9 -->
+	          <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-17.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 9
+				</div>
+				
+				<div class="as-layer" 
+					data-position="bottomLeft" data-horizontal="5%" data-vertical="10" data-width="90%" data-height="28%">
+
+					<p class="as-layer as-opened as-black as-padding" 
+						data-show-transition="down" data-hide-transition="up">
+						Our training team
+					</p>
+
+					<p class="as-layer as-opened as-white as-padding hide-small-screen" 
+						data-vertical="50"
+						data-show-transition="up" data-hide-transition="down">
+						Training team always trained <span class="hide-medium-screen">, our official personnel who are newly joined our company.</span>
+					</p>
+			       </div>
+			      </div>
+
+	        <!-- Panel 10 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-18.jpg"/>
+				</a>
+				
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 10
+				</div>
+				
+				<div class="as-layer" 
+					data-position="bottomLeft" data-horizontal="30" data-vertical="30" data-width="70%" data-height="50%">
+					
+					<h3 class="as-layer as-opened as-white as-padding"
+						data-show-transition="left" data-hide-transition="right">
+						Our purchase team
+					</h3>
+					<p class="as-layer as-opened as-black as-padding hide-small-screen" 
+						data-vertical="50" 
+						data-show-transition="left" data-show-delay="200" data-hide-transition="right" data-hide-delay="200">
+						The team is working in purchase department.
+					</p>
+					<p class="as-layer as-opened as-white as-padding hide-medium-screen" 
+					data-vertical="100" data-width="350" 
+					data-show-transition="left" data-show-delay="400" data-hide-transition="right" 
+					data-hide-delay="500">
+					Our all official instrument purchase by the purchase department.
+				 </p>
+				</div>
+			   </div>
+
+	        <!-- Panel 11 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-19.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 11
+				</div>
+
+				<p class="as-layer as-opened as-white as-padding" 
+					data-position="bottomLeft" data-vertical="10" data-horizontal="2%" data-width="96%" 
+					data-show-transition="up">
+					Mechanical team <span class="hide-small-screen">, The team is part of mechanical department .</span> <span class="hide-medium-screen">The servicing different type instrument of our official instument .</span>
+				</p>
+			   </div>
+
+	        <!-- Panel 12 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-20.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 12
+				</div>
+
+				<div class="as-layer" 
+				data-position="topRight" data-horizontal="20" data-vertical="10%" data-width="50%" data-height="50%">
+					
+				 <p class="as-layer as-opened as-white as-padding"
+						data-show-transition="right" data-hide-transition="left" data-show-delay="500">
+						Media team
+				</p>
+
+				<p class="as-layer as-opened as-black as-padding hide-small-screen"
+				   data-vertical="50"
+				  data-show-transition="left" data-hide-transition="right" data-show-delay="700">
+				  The team is working under the media department<span class="hide-medium-screen">, The always focus our all activities through print and electric and social media.</span>
+					</p>
+				</div>
+			   </div>
+
+			<!-- Panel 13 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-21.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 13
+				</div>
+				
+				<div class="as-layer" 
+					data-horizontal="30" data-vertical="30" data-width="100%">
+					
+					<p class="as-layer as-opened as-black as-padding"
+						data-show-transition="left" data-hide-transition="down" data-show-delay="400" data-hide-delay="200">
+						CSR Team
+					</p>
+
+					<p class="as-layer as-opened as-white as-padding hide-small-screen"
+						data-horizontal="120"
+						data-show-transition="left" data-hide-transition="down" data-show-delay="600" data-hide-delay="100">
+						The team are working in Corporate Social responsibility department
+					</p>
+
+					<p class="as-layer as-opened as-black as-padding hide-small-screen"
+						data-horizontal="245"
+						data-show-transition="left" data-hide-transition="down" data-show-delay="800">
+						The department always corporate social responsibility for the deprived people in our country.
+					</p>
+				</div>
+			</div>
+
+	        <!-- Panel 14 -->
+	        <div class="as-panel">
+				<a href="http://bqworks.com">
+					<img class="as-background" src="img/slide-22.jpg"/>
+				</a>
+
+				<div class="as-layer as-closed as-white as-vertical panel-counter"
+					 data-position="bottomLeft" data-horizontal="8" data-vertical="8">
+					 Panel 14
+				</div>
+
+				<p class="as-layer as-black as-padding" 
+					data-position="bottomRight" data-horizontal="10" data-vertical="10" data-width="40%">
+				Our compliance team <span class="hide-small-screen">, The team ensure all types of worker internationa official requirements .</span> <span class="hide-medium-screen">The team conducted by compliance department.</span>
+				</p>
+			</div>
+		</div>
+    </div>
+	
+    <!-- End of Accordion Slider -->
+
+     <div class="controls">
+    	Change responsive mode: 
+    	<span class="auto-arrow">&rarr;</span> <a href="#" class="auto">Auto</a> or 
+    	<span class="custom-arrow">&rarr;</span> <a href="#" class="custom">Custom</a>
+    </div>
+	   </div>
+		  </div>
+			<div class="main_wrap our_team_article_bg">
+			<div class="wrap">
+			<div id="team_article">
+			<h2>What is team?</h2>
+			<p>A team is a group of individuals (human or non-human) 
+			working together to achieve their goal.
+			As defined by Professor Leigh Thompson of the Kellogg 
+			School of Management, "[a] team is a group of people 
+			who are interdependent with respect to information,
+			resources, knowledge and skills and who seek to 
+			combine their efforts to achieve a common goal".[1]
+			A group does not necessarily constitute a team. 
+           Teams normally have members with complementary 
+			skills[2] and generate synergy[3] through a 
+			coordinated effort which allows each member to
+			 maximize their strengths and minimize their 
+			 weaknesses.</p>
+			 <p>Naresh Jain (2009) claims:
+            Team members need to learn how to help one 
+			another, help other team members realize their
+			true potential, and create an environment that 
+			allows everyone to go beyond their limitations.[4]
+			While academic research on teams and teamwork has 
+			grown consistently and has shown a sharp increase 
+			over the past recent 40 years, the societal diffusion
+			of teams and teamwork actually followed a volatile 
+			trend in the 20th century.[5] The concept was 
+			 introduced into business in the late 20th century, 
+			 which was followed by a popularization of the concept
+			of constructing teams.</p>
+			<p>Differing opinions exist on 
+			 the efficacy of this new management fad.[6] Some see
+			"team" as a four-letter word: overused and under-useful.[7]
+			Others see it as a panacea that realizes the Human 
+			Relations Movement's desire to integrate what that
+			 movement perceives as best for workers and as best
+			for managers.[8]
+			Many people believe in the effectiveness of teams, 
+			but also see them as dangerous because of the
+			potential for exploiting workers — in that team 
+			effectiveness can rely on peer pressure and peer
+			surveillance.[9] However, Hackman sees team 
+		    effectiveness not only in terms of performance:
+		   a truly effective team will contribute to the 
+			personal well-being and adaptive growth of its 
+			members.[10]</p>
+
+			<p>English-speakers commonly use the word "team" 
+			in today's society to characterise many types
+			of groups. Peter Guy Northouse's book Leadership:
+			theory and practice[11] discusses teams from a 
+			leadership perspective. According to the team 
+			approach to leadership, a team is a type of 
+			organizational group of people that are members.
+			[citation needed] A team is composed of members 
+			who are dependent on each other, work towards 
+			interchangeable achievements, and share common
+			attainments. A team works as a whole together 
+		    to achieve certain things. A team is usually 
+		    located in the same setting as it is normally
+			connected to a kind of organization, company,
+			or community.</p>
+			<p>Teams can meet in-person (directly 
+			face-to-face) or virtually when practicing their
+			values and activities or duties. A team's communication
+			is significantly important to their relationship.
+			[citation needed] Ergo, communication is frequent 
+			 and persistent, and as well are the meetings.
+			[citation needed] The definition of team as an 
+			organizational group is not completely set in 
+			stone, as organizations have confronted a
+			 myriad[quantify] of new forms of contemporary 
+			collaboration. Teams usually have strong 
+			organizational structured platforms and 
+			respond quickly and efficiently to challenges
+			as they have skills and the capability to do 
+			so.[citation needed] An effective organizational 
+			team leads to greater productivity, more effective 
+			implementation of resources, better decisions and 
+			problem-solving, better-quality products/service,
+			
+			and greater innovation and originality.[citation needed]
+
+			Alongside the concept of a team, compare the more
+		    structured/skilled concept of a crew, the advantages 
+			of formal and informal partnerships, or the well-defined 
+			- but time-limited - existence of task forces.</p>
+
+			<p>A team becomes more than just a collection of people 
+
+			when a strong sense of mutual commitment creates synergy,
+		   thus generating performance greater than the sum of the 
+		   performance of its individual members.[12]
+
+			Thus teams of game players can form (and re-form) to 
+			practise their craft/sport. Transport logistics executives 
+			can select teams of horses, dogs, or oxen for the purpose 
+			of conveying passengers or goods. </p>
+			<h3>Our colloborative effort in the work:</h3>
+			<img src="img/teamwork-3.jpg" alt="team work image" />
+			<p>We always follow teamwork for achieving more better with 
+			together. It is true that 
+			teamwork is the best way to utilize different person different
+			talent and thinking with
+			together in a project to achieving more and more. There is no doubt 
+			that teamwork bring better speed in the work and it makes great 
+			creation and rythom and also harmony among the team member. For this 
+			reason most of the corporat office internally and globally 
+			emphasize on teamwork.</p>
+			<h2>Analyze of Teamwork:</h2>
+			<p>Teamwork is the collaborative effort of a group to achieve 
+			a common goal or to complete a task in the most effective and 
+			efficient way.[1][2] This concept is seen within the greater 
+			framework of a team, which is a group of interdependent 
+			individuals who work together towards a common goal.[3] The 
+			four key characteristics of a team include a shared goal,
+			interdependence, boundedness and stability, the ability to
+			manage their own work and internal process, and operate in
+			a bigger social system. [4] Basic requirements for effective
+			teamwork are an adequate team size. The context is important,
+			and team sizes can vary depending upon the objective. A team 
+			must include at least 2 or more members, and most teams range 
+			in size from 2 to 100. Sports teams generally have fixed sizes
+			based upon set rules, and work teams may change in size depending
+			upon the phase and complexity of the objective. Teams need to be
+			able to leverage resources to be productive (i.e. playing fields
+			or meeting spaces, scheduled times for planning, guidance from 
+			coaches or supervisors, support from the organization, etc.), 
+			and clearly defined roles within the team in order for everyone 
+			to have a clear purpose.[5][6][7][8] Teamwork is present in any 
+			context where a group of people are working together to achieve 
+			a common goal.[1] These contexts include an industrial organization
+			(formal work teams), athletics (sports teams), a school (classmates
+			working on a project), and the healthcare system (operating room teams).
+			In each of these settings, the level of teamwork and interdependence 
+			can vary from low (e.g. golf, track and field), to intermediate 
+			(e.g. baseball, football), to high (e.g. basketball, soccer), 
+			depending on the amount of communication, interaction, and 
+			collaboration present between team members. E. g. Team work
+			coordinates the work as early as possible</p>
+			<p>Teamwork stretches far beyond making the best snow fort or
+			carrying the heaviest objects. But not everyone sees the 
+			value and benefits that a group of people working together can
+			accomplish. </p>
+			<h2>Teamwork background:</h2>
+			<img src="img/teamwork-1.jpg" alt="teamwork image" />
+			<p>The Oxford English Dictionary records the use of "team-work" 
+			in the context of a team of draught animals as early as 1800.[9]
+
+			Even though collaborative work among groups of individuals is
+			very prominent today, that was not the case over half a century 
+			ago.[timeframe?] The shift from the typical assembly line to 
+			organizational models that contained increasing amounts of teamwork
+			first came about during World War I and World War II, in an effort
+			[by whom?] for countries to unite their people.[citation needed] 
+			The movement towards teamwork was mostly due to the Hawthorne 
+			studies, a set of studies conducted in the 1920s and 1930s that
+			suggested positive aspects of teamwork in an organizational setting.
+			After organizations recognized the value of teamwork and the
+			positive effects it had on companies, entire fields of work 
+			shifted from the typical assembly line to the contemporary High 
+			Performance Organizational Model</p>
+		  </div>
+		 </div>
+		</div>
+		<div class="main_wrap footer_bg">
+		  <div class="wrap">
+			<div id="team_footer">
+			<h3>&copy;All Rights Reserved By Silicon  Software Limited</h3>
+			 </div>
+			   <div class="main_wrap team_bfs_footer_bg">
+				 <div class="wrap">
+				   <div class="team_footer_wrapper_content">
+					 <h2>Our Address:</h2>
+					  <div class="team_footer_content_one">
+						<h3>Our Corporate office </h3>
+						  <p>5/4, Block-F, 3rd Floor, Aziz Mohallah.</p>
+							<p>Mohammadpur, Dhaka-1207.</p>
+							  </div>
+								<div class="team_footer_content_two">
+								  <h3>Our branch office-1</h3>
+									<p>Road no-8A, House#76</p>
+									 <p>Dhanmodi,Dhaka-1000.</p>
+									   </div>
+										 <div class="team_footer_content_three">
+										  <h3>Our branch office-2</h3>
+										   <p>Road no-7,House#12, Milkvita area</p>
+											<p>Rupnagar, Mirpur, Dhaka-1204</p>
+											</div>
+											<div class="team_footer_content_four">
+											 <h3>Our branch office-3</h3>
+											 <p>5/4. block-F, Aziz Mohall.</p>
+											 <p>Mohammadpur, Dhaka-1207.</p>
+										</div>
+									   </div>
+								      </div>
+								     </div> 
+								     <div id="social_media">
+									 <h3>Shares this:</h3>
+								     <ul>
+									    <li>
+										<a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+									</li>
+									<li>
+										<a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+								 </li>
+								 <li>
+								 <a href="https://9to5google.com"><i class="fa-brands fa-google-plus"></i></a>
+							  </li>
+							 </ul>
+							</div><!----------End social media------->
+						   </div>
+						  </div>
+						 </div>
+						</div>
+					   </body>
+				      </html>				

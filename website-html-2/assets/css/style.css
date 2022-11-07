@@ -1,0 +1,157 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #000000;
+    color: #000000;
+  }
+
+  .slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .holder {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 10000vw;
+    height: 100vh;
+    transition: left 1s;
+  }
+
+  .holder div {
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 30px;
+  }
+
+
+  .slide-1 {
+    background-image: url('../../img/mission-tech-1.jpg');
+	
+  } 
+  
+  .slide-2 {
+    background-image: url('../../img/mission-tech-2.jpg');
+  }
+  
+  .slide-3 {
+    background-image: url('../../img/mission-tech-3.jpg');
+  }
+  
+  .slide-4 {
+    background-image: url('../../img/mission-tech-4.jpg');
+  }
+  
+  
+  .slide-5 {
+	background-image: url('../../img/mission-tech-5.jpg');
+  }
+  
+  
+  .slide-6 {
+    background-image: url('../../img/mission-tech-6.jpg');
+  }
+
+  .slide-7 {
+    background-image: url('../../img/mission-tech-7.jpg');
+  }
+
+  .slide-8 {
+    background-image: url('../../img/mission-tech-8.jpg');
+  }
+
+  .slide-9 {
+    background-image: url('../../img/mission-tech-9.jpg');
+  }
+
+  .slide-10 {
+    background-image: url('../../img/mission-tech-10.jpg');
+	
+  }
+  
+  .slide-11 {
+    background-image: url('../../img/mission-tech-11.jpg');
+  }
+  
+  .slide-12 {
+    background-image: url('../../img/mission-tech-12.jpg');
+  }
+  
+  .slide-13 {
+    background-image: url('../../img/mission-tech-13.jpg');
+  }
+  
+  .slide-14 {
+    background-image: url('../../img/mission-tech-14.jpg');
+  }
+  
+  .slide-15 {
+    background-image: url('../../img/mission-tech-15.jpg');
+  }
+  
+  .slide-16 {
+    background-image: url('../../img/mission-tech-16.jpg');
+  }
+
+  .slide-17 {
+    background-image: url('../../img/mission-tech-17.jpg');
+  }
+  
+  .slide-18 {
+    background-image: url('../../img/mission-tech-18.jpg');
+  }
+  
+  
+  .slide-19 {
+    background-image: url('../../img/mission-tech-19.jpg');
+  }
+  
+  
+  .slide-20 {
+    background-image: url('../../img/mission-tech-20.jpg');
+  }
+  
+  
+  
+
+
+  .steps {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
